@@ -48,7 +48,10 @@
 html, body, .site-wrapper {
   height: 100%;
 }
-
+.logo-device
+{
+  width: 50%;
+}
 body {
   background-color: #ffffff;
   font-size: 14px;
