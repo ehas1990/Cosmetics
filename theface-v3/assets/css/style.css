@@ -7901,3 +7901,36 @@ h2.entry-title:before {
     text-align: center !important;
   }
 }
+
+/* login */
+.fa-unlock
+{
+  display: none;
+}
+.cosmotic-form
+{
+  padding: 5%;
+}
+.input-group-text {
+	display: flex;
+	align-items: center;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	text-align: center;
+	white-space: nowrap;
+	background-color: #e9ecef00 !important;
+	border: 1px solid #ced4da;
+	border-radius: .375rem;
+}
+input:focus
+{
+  border-color: red;
+border-style: solid;
+}
+.link-a,.link-a:hover
+{
+  text-decoration: underline;
+}
