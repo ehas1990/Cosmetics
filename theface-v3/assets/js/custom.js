@@ -22,5 +22,40 @@ $(document).ready(function(){
 $(".fa-trash-o").click(function(){
   $(this).closest("tr").hide();
 });
+$(".fa-trash").click(function(){
+  $(this).closest("li").hide();
+});
+  // pagination col
+  var itemsPerPage = 5; // Define how many items you want to display per page
+  var $items = $(".product"); // Select all elements with the item-width class
+  
+  var itemCount = $items.length; // Get the total number of items
+  var totalPages = Math.ceil(itemCount / itemsPerPage); // Calculate the total number of pages
+
+  // Hide all items initially
+  $items.hide();
+
+  // Show the first page of items
+  $items.slice(0, itemsPerPage).show();
+
+  // Generate pagination buttons
+  for (var i = 1; i <= totalPages; i++) {
+    $('<button class="pagination-button">' + i + "</button>").appendTo(
+      "#pagination-numbers"
+    );
+  }
+
+  // Handle pagination button click
+  $(".pagination-button").on("click", function () {
+    var pageNumber = $(this).text(); // Get the clicked page number
+    var startIndex = (pageNumber - 1) * itemsPerPage; // Calculate the start index of items to show
+    var endIndex = startIndex + itemsPerPage; // Calculate the end index of items to show
+
+    // Hide all items
+    $items.hide();
+
+    // Show items for the clicked page
+    $items.slice(startIndex, endIndex).show();
+  });
   
 });
