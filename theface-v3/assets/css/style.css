@@ -1118,7 +1118,7 @@ header.header.is-sticky .header-bottom {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-right: 10px;
-    display: block;
+    display:inline-flex;
   }
 }
 .header-top-links ul li:last-child {
@@ -1133,6 +1133,17 @@ header.header.is-sticky .header-bottom {
 }
 .header-top-links ul li a {
   display: block;
+  font-size: 13px;
+}
+.ht-us-menu > li > a, .ht-cr-menu > li > a {
+  color: #333333;
+  display: block;
+  font-weight: normal;
+  position: relative;
+  text-transform: capitalize;
+  z-index: 10;
+  font-size: 13px;
+  line-height: 40px;
 }
 .header-top-links.color-white ul li {
   color: #d8d8d8;
@@ -2922,7 +2933,7 @@ ul.cart-items li {
 }
 @media only screen and (max-width: 767px) {
   .about-us-content h2 {
-    font-size: 28px;
+    font-size: 20px;
     margin-bottom: 10px;
   }
 }
@@ -8092,3 +8103,102 @@ border-style: solid;
   color:#a6a6a6;
   font-weight: 600;
 }
+.sm-image img {
+  height: 80px;
+  object-fit:fill;
+  aspect-ratio: 3/1;
+}
+@media only screen 
+  and (min-device-width: 210px) 
+  and (max-device-width:320px)
+{
+  .hero-item {
+
+    background-size: 99% 100% !important;
+}
+.slick-list.draggable {
+  height: 240px !important;
+}
+.slider-lg-image-1 .lg-image img {
+width: 100%;
+background: black !important;
+height: 240px;
+object-fit: fill;
+}
+
+}
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+{
+  .hero-item {
+
+    background-size: 99% 100% !important;
+}
+.slick-list.draggable {
+  height: 240px !important;
+}
+.slider-lg-image-1 .lg-image img {
+width: 100%;
+background: black !important;
+height: 240px;
+object-fit: fill;
+}
+}
+@media only screen 
+  and (min-device-width:480px) 
+  and (max-device-width:620px)
+{
+  .hero-item {
+
+    background-size: 99% 100% !important;
+}
+.slick-list.draggable {
+  height: 240px !important;
+}
+.slider-lg-image-1 .lg-image img {
+width: 100%;
+background: black !important;
+height: 240px;
+object-fit: fill;
+}
+}
+@media only screen 
+  and (min-device-width:620px) 
+  and (max-device-width:720px)
+  {
+    .hero-item {
+
+      background-size: 99% 100% !important;
+  }
+  .slick-list.draggable {
+    height: 240px !important;
+  }
+  .slider-lg-image-1 .lg-image img {
+  width: 100%;
+  background: black !important;
+  height: 240px;
+  object-fit: fill;
+  }
+  }
+@media only screen 
+  and (min-device-width:720px) 
+  and (max-device-width:820px)
+  {
+    .section img {
+      height: 100%;
+  }
+  
+}
+@media only screen 
+  and (min-device-width:820px) 
+  and (max-device-width:1200px)
+  {
+
+
+
+
+
+}
+
+
