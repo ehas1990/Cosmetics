@@ -7967,7 +7967,7 @@ h2.entry-title:before {
 }
 
 /* login */
-.fa-unlock
+#unlock,#con_unlock
 {
   display: none;
 }
