@@ -73,11 +73,17 @@ $(".fa-trash").click(function(){
     var confirmNewPassword = $('#connew_password').val();
 
     if (newPassword !== confirmNewPassword) {
-        alert("Passwords do not match");
-        event.preventDefault();
+      $(".textpassword").html("Passwords do not match");
+        $(".textconpassword").html("Passwords do not match");
+        $(".textpassword").css("color", "red");
+        $(".textconpassword").css("color", "red");
     
-    }else{
-      alert("sucess");
+    }else if (newPassword .length < 6 == confirmNewPassword.length < 6) {
+
+      $(".textpassword").html("Password should be at least 6 characters long")
+      $(".textpassword").css("color", "red");
+      $(".textconpassword").html("Password should be at least 6 characters long")
+      $(".textconpassword").css("color", "red");
     }
 });
 $('#create_account').click(function(event) {
