@@ -84,31 +84,81 @@ $('#create_account').click(function(event) {
   var newPassword = $('#password').val();
   var confirmNewPassword = $('#connew_password').val();
   var email =$("#email").val();
+  var email_pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   var contact=$("#contact").val();
+  var phone_pattern = /^\d{10}$/;
   var user=$("#user").val()
-  if (user === '') {
-    alert('Please enter a username.');
-    return false;
-}
-if (contact === '') {
-    alert('Please enter a contact number.');
-    return false;
-}
-if (email === '') {
-    alert('Please enter an email address.');
- 
-}
-if (newPassword === '') {
-    alert('Please enter a password.');
 
+  if (user === '') {
+  
+    $(".textuser").html("Please enter a username")
+    $(".textuser").css("color", "red");
+}else{
+ $(".textuser").text(user);
+    $(".textuser").css("color", "green");
 }
-if (confirmNewPassword === '') {
-    alert('Please confirm your password.');
+
+if (contact === '') {
+    
+    $(".textcontact").html("Please enter a contact number");
+    $(".textcontact").css("color", "red");
+}else if (!phone_pattern.test(contact)) {
  
+  $(".textcontact").html("Please enter a 10-digit phone number");
+  $(".textcontact").css("color", "red");
+}else
+{
+  $(".textcontact").text(contact);
+  $(".textcontact").css("color", "green");
+}
+
+if (email === '') {
+   
+    $(".textemail").html("Please enter an email address");
+    $(".textemail").css("color", "red");
+ 
+}else if (!email_pattern.test(email)) {
+ 
+  $(".textemail").html("Please enter a valid email address");
+  $(".textemail").css("color", "red");
+}else{
+  $(".textemail").text(email);
+  $(".textemail").css("color", "green");
+}
+
+if (newPassword === '') {
+
+    $(".textpassword").html("Please enter a password")
+    $(".textpassword").css("color", "red");
+}else if (newPassword .length < 6) {
+
+  $(".textpassword").html("Password should be at least 6 characters long")
+  $(".textpassword").css("color", "red");
+}else{
+  $(".textpassword").text(newPassword);
+  $(".textpassword").css("color", "green");
+}
+
+if (confirmNewPassword === '') {
+  
+    $(".textconpassword").html("Please confirm your password")
+    $(".textconpassword").css("color", "red");
+}else if (confirmNewPassword.length < 6) {
+  $(".textconpassword").html("Password should be at least 6 characters long");
+  $(".textconpassword").css("color", "red");
+}else{
+  $(".textconpassword").text(confirmNewPassword);
+  $(".textconpassword").css("color", "green");
 }
 if (newPassword!== confirmNewPassword) {
-    alert('Passwords do not match.');
-    
+   
+    $(".textpassword").html("Passwords do not match")
+    $(".textpassword").css("color", "red");
+}else{
+  $(".textconpassword").text(input[Password]);
+  $(".textconpassword").css("color", "green");
+  $(".textpassword").text(input[Password]);
+  $(".textpassword").css("color", "green");
 }
 
 // If all validations pass, the form will submit
