@@ -2297,7 +2297,7 @@ ul.cart-items li {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  background-size: cover;
+  background-size:contain;
   background-repeat: no-repeat;
   background-position: center center;
   z-index: 1;
@@ -8136,9 +8136,7 @@ border-style: solid;
 
     background-size: 99% 100% !important;
 }
-.slick-list.draggable {
-  height: 240px !important;
-}
+
 .slider-lg-image-1 .lg-image img {
 width: 100%;
 background: black !important;
@@ -8152,12 +8150,10 @@ object-fit: fill;
   and (max-device-width: 480px)
 {
   .hero-item {
+    background-size: contain !important;
+    margin-top: -7% !important;
+  }
 
-    background-size: 99% 100% !important;
-}
-.slick-list.draggable {
-  height: 240px !important;
-}
 .slider-lg-image-1 .lg-image img {
 width: 100%;
 background: black !important;
@@ -8170,9 +8166,9 @@ object-fit: fill;
   and (max-device-width:620px)
 {
   .hero-item {
-
-    background-size: 99% 100% !important;
-}
+    background-size: contain !important;
+    margin-top: -7% !important;
+  }
 .slick-list.draggable {
   height: 240px !important;
 }
@@ -8188,12 +8184,9 @@ object-fit: fill;
   and (max-device-width:720px)
   {
     .hero-item {
-
-      background-size: 99% 100% !important;
-  }
-  .slick-list.draggable {
-    height: 240px !important;
-  }
+      background-size: contain !important;
+      margin-top: -7% !important;
+    }
   .slider-lg-image-1 .lg-image img {
   width: 100%;
   background: black !important;
