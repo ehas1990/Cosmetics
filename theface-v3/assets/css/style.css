@@ -1326,7 +1326,7 @@ header.header.is-sticky .header-bottom {
 
 /*-- Header Bottom --*/
 .header-bottom {
-  padding: 35px 0 30px;
+  /* padding: 35px 0 30px; */
   border-bottom: 1px solid #e5e5e5;
 }
 .header-bottom.bg-dark {
@@ -8107,6 +8107,26 @@ border-style: solid;
   height: 80px;
   object-fit:fill;
   aspect-ratio: 3/1;
+}
+.section1
+{
+  background: #EBEBEB;
+}
+.cosmotic-form {
+  background: #ffffff;
+  box-shadow: #9f9f9f85 2px 2px 18px;
+  border-radius: 20px;
+}
+#dark-btn
+{
+  background-color: #000000;
+  border-color: #000000;
+}
+
+#dark-btn:hover
+{
+  background-color: #ff92bc;
+  border-color: #ff92bc;
 }
 @media only screen 
   and (min-device-width: 210px) 
