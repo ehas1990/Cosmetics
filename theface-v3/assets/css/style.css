@@ -2327,17 +2327,17 @@ ul.cart-items li {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1499px) {
   .hero-item {
-    height: 600px;
+    height: 350px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .hero-item {
-    height: 500px;
+    height: 350px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .hero-item {
-    height: 500px;
+    height: 350px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -8117,7 +8117,7 @@ border-style: solid;
   box-shadow: #9f9f9f85 2px 2px 18px;
   border-radius: 20px;
 }
-#dark-btn
+#dark-btn,#passwordForm
 {
   background-color: #000000;
   border-color: #000000;

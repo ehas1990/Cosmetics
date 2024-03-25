@@ -12,7 +12,7 @@
     <!-- Place favicon.ico in the root directory -->
     <link href="assets/images/favicon.ico" type="img/x-icon" rel="shortcut icon">
     <!-- All css files are included here. -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/iconfont.min.css">
     <link rel="stylesheet" href="assets/css/plugins.css">
@@ -181,38 +181,34 @@
                 <div class="row p-5 justify-content-center">
                     
                     <div class="col-lg-5 col-md-5 col-sm-12 col-12 g-0 cosmotic-form">
-                        <div class="row">
-                        <div class="col-lg-12">
-                      
-                               <h3 class="text-center">Forgot your Password</h3>
-                            <p class="text-center mt-2"> Your Password Will be reset link by Email</p>
-                         </div>    
-                           
-                        </div>
-                            <form action="" method="post" class="mt-3">
+                       
+                            <form action="" method="post">
                                 <div class="row">
                                      <div class="col-lg-12">
+                                        <span class="textpassword"></span>
                                         <div class="input-group mb-3">
                                             
-                                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-at"></i></span>
-                                          </div>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="OTP Enter" aria-label="Username" name="otp" aria-describedby="basic-addon1" id="otp">
+                                                
+                                            </div>
                                           
                                         
                                      </div>
                                 </div>
-                                
-                        
+                                </div>
+                             
+                            
                              <div class="row mt-3 text-center">
-                                <div class="col-lg-12">
-                                  <input type="button" class="btn slick-btn" value="Send Link">
+                                <div class="col-lg-12"> 
+                                  <input type="button" class="btn slick-btn" value="OTP ENTER" id="dark-btn">
                                  
                                 </div>
                            </div>
                             </form>
                             <div class="row mt-3 text-center">
                                 <div class="col-lg-12">
-                                  <a href="login.html">Back To Login</a>
+                                  <a href="register.html">Back to Login</a>
                                  
                                 </div>
                            </div>
