@@ -48,10 +48,13 @@
 html, body, .site-wrapper {
   height: 100%;
 }
-.logo-device
-{
-  width: 100%;
+.logo-device {
+  width: 116%;
+  height: 75px;
+  aspect-ratio: 3/2;
+  object-fit: fill;
 }
+
 body {
   background-color: #ffffff;
   font-size: 14px;
@@ -5001,7 +5004,7 @@ color: #fff;
 }
 
 .rating i.fa:not(:last-child) {
-  color: #F9BA48;
+  color: #050505;
 }
 
 .comment-form-comment {
@@ -7954,9 +7957,10 @@ h2.entry-title:before {
 {
   display: none;
 }
-.cosmotic-form
-{
+.cosmotic-form {
   padding: 5%;
+  background: #ffffff ;
+  box-shadow: #000 0px 0px 2px;
 }
 .input-group-text {
 	display: flex;

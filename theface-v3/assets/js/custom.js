@@ -170,4 +170,40 @@ if (newPassword!== confirmNewPassword) {
 // If all validations pass, the form will submit
 alert("sucess");
 });
+$(".star1").click(function() {
+  
+  $(".star1").css("color", "#F9BA48");
+  
+  $(".star2, .star3, .star4, .star5").css("color", "black");
+});
+$(".star2").click(function() {
+  
+  $(".star2").css("color", "#F9BA48");
+  $(".star1").css("color", "#F9BA48");
+  $(" .star3, .star4, .star5").css("color", "black");
+});
+$(".star3").click(function() {
+  
+  $(".star2").css("color", "#F9BA48");
+  $(".star1").css("color", "#F9BA48");
+  $(".star3").css("color", "#F9BA48");
+  $(".star4, .star5").css("color", "black");
+});
+$(".star4").click(function() {
+  
+  $(".star2").css("color", "#F9BA48");
+  $(".star1").css("color", "#F9BA48");
+  $(".star3").css("color", "#F9BA48");
+  $(".star4").css("color", "#F9BA48");
+  $(".star5").css("color", "black");
+});
+$(".star5").click(function() {
+  
+  $(".star2").css("color", "#F9BA48");
+  $(".star1").css("color", "#F9BA48");
+  $(".star3").css("color", "#F9BA48");
+  $(".star4").css("color", "#F9BA48");
+  $(".star5").css("color", "#F9BA48");
+});
+
 });
