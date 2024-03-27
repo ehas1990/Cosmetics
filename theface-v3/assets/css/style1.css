@@ -48,9 +48,11 @@
 html, body, .site-wrapper {
   height: 100%;
 }
-.logo-device
-{
-  width: 100%;
+.logo-device {
+  width: 116%;
+  height: 75px;
+  aspect-ratio: 3/2;
+  object-fit: fill;
 }
 body {
   background-color: #ffffff;
@@ -1943,7 +1945,7 @@ ul.cart-items li {
 }
 @media only screen and (max-width: 479px) {
   .mobile-menu .mean-bar .meanmenu-reveal {
-    top: -30px;
+    top: -46px;
   }
 }
 .mobile-menu .mean-bar .meanmenu-reveal span {
